@@ -14,4 +14,77 @@
         android:scaleType="centerCrop"
         android:src="@drawable/image" />
 
+    <!-- Nombre de la alarma -->
+    <TextView
+        android:id="@+id/section1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:gravity="center"
+        android:text="@string/nombre_alarma_1"
+        android:textColor="@color/text"
+        android:textSize="26sp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Hora de la alarma -->
+    <LinearLayout
+        android:id="@+id/section2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="211dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/section1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="@string/hora_1"
+            android:textColor="@color/text"
+            android:textSize="52sp"
+            android:fontFamily="@font/ubuntu_bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/manana"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:fontFamily="@font/ubuntu_bold" />
+    </LinearLayout>
+
+    <!-- Botón de posponer alarma -->
+    <ImageButton
+        android:id="@+id/section3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="222dp"
+        android:src="@drawable/button1"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/section2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón de detener alarma -->
+    <ImageButton
+        android:id="@+id/section4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/button2"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/section3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
