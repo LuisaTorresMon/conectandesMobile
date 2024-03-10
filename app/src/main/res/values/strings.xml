@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alarmas</string>
+    <string name="nombre_alarma_1">Recorrido a la escuela de Alberto</string>
+    <string name="nombre_alarma_2">Cita medica del abuelo Jaime</string>
+    <string name="hora_1">8:00</string>
+    <string name="hora_2">4:00</string>
+    <string name="manana">AM</string>
+    <string name="tarde">PM</string>
+    <string name="crear_alarma">Crear Alarma</string>
+</resources>
