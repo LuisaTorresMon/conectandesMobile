@@ -4,7 +4,13 @@
     <string name="nombre_alarma_2">Cita medica del abuelo Jaime</string>
     <string name="hora_1">8:00</string>
     <string name="hora_2">4:00</string>
+    <string name="hora_inicial_crear_alarma">04</string>
+    <string name="minuto_inicial_crear_alarma">00</string>
     <string name="manana">AM</string>
     <string name="tarde">PM</string>
     <string name="crear_alarma">Crear Alarma</string>
+    <string name="fecha">Fecha</string>
+    <string name="descripcion">Descripción</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
 </resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="opciones_spinner">
+        <item>Repetir</item>
+        <item>A diario</item>
+        <item>Semanal</item>
+        <item>Mensual</item>
+    </array>
+    <array name="opciones_spinner_group">
+        <item>Seleccionar Grupo Familiar</item>
+        <item>Familia López</item>
+        <item>Familia Sánchez</item>
+        <item>Familia Prieto</item>
+    </array>
+    <array name="opciones_spinner_member">
+        <item>Seleccionar Miembro</item>
+        <item>Nora Sanchez - (Esposa)</item>
+        <item>Alberto López - (Hijo)</item>
+        <item>José López - (Abuelo)</item>
+    </array>
+</resources>

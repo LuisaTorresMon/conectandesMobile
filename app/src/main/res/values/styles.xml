@@ -4,6 +4,25 @@
         <item name="android:background">@drawable/rounded_corner</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">16sp</item>
+        <item name="android:width">316dp</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+    </style>
+    <!-- style spinner -->
+    <style name="SpinnerStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:checkMark">@null</item>
+        <item name="android:background">@color/white</item> <!-- Color de fondo -->
+        <item name="android:fontFamily">@font/ubuntu_bold</item> <!-- Familia de fuente -->
+        <item name="android:textSize">16sp</item> <!-- Tamaño de texto -->
+    </style>
+    <style name="SwitchMaterialStyle" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="android:scaleX">1.5</item>
+        <item name="android:scaleY">1.5</item>
+    </style>
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_rounded_corner</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:width">316dp</item>
         <item name="android:fontFamily">@font/ubuntu_bold</item>
     </style>
 </resources>
