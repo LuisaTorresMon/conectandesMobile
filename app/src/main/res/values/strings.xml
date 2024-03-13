@@ -13,4 +13,5 @@
     <string name="descripcion">Descripción</string>
     <string name="guardar">Guardar</string>
     <string name="cancelar">Cancelar</string>
+    <string name="editar">Editar</string>
 </resources>

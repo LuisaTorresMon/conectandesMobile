@@ -25,5 +25,19 @@ class MainActivity : AppCompatActivity() {
             val intentCreateAlarm = Intent(this, CreateAlarm::class.java);
             startActivity(intentCreateAlarm);
         }
+
+        val section2Layout: LinearLayout = findViewById(R.id.section2)
+
+        section2Layout.setOnClickListener {
+            val intent = Intent(this, EditAlarm::class.java)
+            startActivity(intent)
+        }
+
+        val section3Layout: LinearLayout = findViewById(R.id.section3)
+
+        section3Layout.setOnClickListener {
+            val intent = Intent(this, EditAlarm::class.java)
+            startActivity(intent)
+        }
     }
 }

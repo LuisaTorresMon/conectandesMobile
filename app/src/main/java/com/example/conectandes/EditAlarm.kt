@@ -14,6 +14,8 @@ import java.util.*
 import android.app.DatePickerDialog
 import android.net.Uri
 import android.widget.Button
+import android.widget.ImageButton
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.google.android.material.textfield.TextInputLayout
@@ -21,7 +23,7 @@ import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.MaterialTimePicker.INPUT_MODE_KEYBOARD
 import com.google.android.material.timepicker.TimeFormat
 
-class CreateAlarm : AppCompatActivity() {
+class EditAlarm : AppCompatActivity() {
     private lateinit var editTextDate: EditText
     private lateinit var textInputLayout: TextInputLayout
     private lateinit var textInputLayoutDescription: TextInputLayout
@@ -39,7 +41,7 @@ class CreateAlarm : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_alarm)
+        setContentView(R.layout.activity_edit_alarm)
 
         val spinner: Spinner = findViewById(R.id.spinnerOptions)
         val spinner_group: Spinner = findViewById(R.id.spinnerGroup)
@@ -67,9 +69,9 @@ class CreateAlarm : AppCompatActivity() {
         spinner_member.adapter = adapter_member
 
         // Establece el valor inicialmente seleccionado (por ejemplo, la primera opción)
-        spinner.setSelection(0)
-        spinner_group.setSelection(0)
-        spinner_member.setSelection(0)
+        spinner.setSelection(2)
+        spinner_group.setSelection(1)
+        spinner_member.setSelection(1)
 
         editTextDate = findViewById(R.id.editTextDate)
         textInputLayout = findViewById(R.id.textInputLayout)

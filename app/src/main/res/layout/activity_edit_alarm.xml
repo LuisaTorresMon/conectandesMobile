@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue_background"
-    tools:context=".CreateAlarm">
+    tools:context=".EditAlarm">
 
     <ImageView
         android:layout_width="match_parent"
@@ -73,6 +73,7 @@
                     android:background="@color/white"
                     android:focusable="false"
                     android:inputType="none"
+                    android:text="08"
                     android:onClick="showTimePickerDialog"
                     android:textColor="@color/text" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -91,6 +92,7 @@
                     android:layout_height="72dp"
                     android:inputType="none"
                     android:focusable="false"
+                    android:text="00"
                     android:onClick="showTimePickerDialog"
                     android:background="@color/white"
                     android:textColor="@color/text"/>
@@ -114,7 +116,7 @@
                         android:id="@+id/editTextAM"
                         android:layout_width="70dp"
                         android:layout_height="36dp"
-                        android:background="@color/white"
+                        android:background="@color/active_buttons"
                         android:focusable="false"
                         android:inputType="none"
                         android:onClick="onAMClick"
@@ -222,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textMultiLine"
                 android:minLines="3"
-                android:hint="@string/descripcion"
+                android:hint="Recorrido a la escuela de Alberto"
                 android:gravity="top"
                 android:padding="2dp"
                 android:background="@drawable/edit_text_background" />
@@ -298,38 +300,37 @@
 
         </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layoutButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/layoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/buttonSave"
-            android:layout_width="136dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="4dp"
-            style="@style/ButtonStyle"
-            android:text="@string/guardar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="136dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                style="@style/ButtonStyle"
+                android:text="@string/editar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:id="@+id/buttonCancel"
-            android:layout_width="136dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="4dp"
-            android:layout_marginLeft="80dp"
-            style="@style/ButtonStyle"
-            android:text="@string/cancelar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <Button
+                android:id="@+id/buttonCancel"
+                android:layout_width="136dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="80dp"
+                style="@style/ButtonStyle"
+                android:text="@string/cancelar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
 
     </LinearLayout>
-
-    </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
