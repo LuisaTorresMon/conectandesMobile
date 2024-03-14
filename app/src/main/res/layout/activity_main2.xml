@@ -31,51 +31,55 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Hora de la alarma -->
+
+    <!-- Botón de posponer alarma -->
+
+    <!-- Botón de detener alarma -->
     <LinearLayout
         android:id="@+id/section2"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="211dp"
+        android:layout_marginTop="176dp"
         android:gravity="center_horizontal"
-        app:layout_constraintTop_toBottomOf="@id/section1"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" >
+        app:layout_constraintTop_toBottomOf="@id/section1">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="10dp"
+            android:fontFamily="@font/ubuntu_bold"
             android:text="@string/hora_1"
             android:textColor="@color/text"
-            android:textSize="52sp"
-            android:fontFamily="@font/ubuntu_bold" />
+            android:textSize="52sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:fontFamily="@font/ubuntu_bold"
             android:text="@string/manana"
             android:textColor="@color/text"
-            android:textSize="20sp"
-            android:fontFamily="@font/ubuntu_bold" />
+            android:textSize="20sp" />
     </LinearLayout>
 
-    <!-- Botón de posponer alarma -->
     <ImageButton
         android:id="@+id/section3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="222dp"
-        android:src="@drawable/button1"
+        android:layout_marginTop="164dp"
         android:background="@android:color/transparent"
-        app:layout_constraintTop_toBottomOf="@id/section2"
+        android:src="@drawable/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/section2" />
 
-    <!-- Botón de detener alarma -->
     <ImageButton
         android:id="@+id/section4"
         android:layout_width="wrap_content"

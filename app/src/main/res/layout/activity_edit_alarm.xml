@@ -171,15 +171,14 @@
         <Spinner
             android:id="@+id/spinnerOptions"
             style="@style/SpinnerStyle"
-            android:layout_width="358dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/labelSpinner"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="2dp"
             android:layout_marginRight="20dp"
             android:dropDownWidth="316dp"
-            android:minHeight="48dp"
-            />
+            android:minHeight="48dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
@@ -296,7 +295,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:onClick="openGoogleMaps"
-                android:src="@drawable/google_map" />
+                android:src="@drawable/mapa" />
 
         </LinearLayout>
 
