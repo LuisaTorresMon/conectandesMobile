@@ -26,16 +26,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentCreateAlarm);
         }
 
-        val section2Layout: LinearLayout = findViewById(R.id.section2)
+        val section21Layout: LinearLayout = findViewById(R.id.section21)
 
-        section2Layout.setOnClickListener {
+        section21Layout.setOnClickListener {
             val intent = Intent(this, EditAlarm::class.java)
             startActivity(intent)
         }
 
-        val section3Layout: LinearLayout = findViewById(R.id.section3)
+        val section31Layout: LinearLayout = findViewById(R.id.section31)
 
-        section3Layout.setOnClickListener {
+        section31Layout.setOnClickListener {
             val intent = Intent(this, EditAlarm::class.java)
             startActivity(intent)
         }
